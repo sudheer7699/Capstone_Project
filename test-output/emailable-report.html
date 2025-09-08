@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">NopCommerce Suite</th></tr>
+<tr><td><a href="#t0">Regression</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">423,837</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">NopCommerce Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Regression &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.nopcommerce.tests.CartTest</td><td><a href="#m0">addToCartTest</a></td><td rowspan="1">1757338192745</td><td rowspan="1">182439</td></tr><tr class="failedodd"><td rowspan="1">com.nopcommerce.tests.CheckoutTest</td><td><a href="#m1">registeredUserCheckout</a></td><td rowspan="1">1757338403598</td><td rowspan="1">23304</td></tr><tr class="failedeven"><td rowspan="1">com.nopcommerce.tests.LoginTest</td><td><a href="#m2">validLoginTest</a></td><td rowspan="1">1757338051763</td><td rowspan="1">13964</td></tr><tr class="failedodd"><td rowspan="1">com.nopcommerce.tests.OrderHistoryTest</td><td><a href="#m3">viewOrderHistory</a></td><td rowspan="1">1757338439900</td><td rowspan="1">12049</td></tr><tr><th colspan="4">Regression &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.nopcommerce.tests.RegisterTest</td><td><a href="#m4">registerNewUser</a></td><td rowspan="1">1757338035634</td><td rowspan="1">3214</td></tr><tr class="passedodd"><td rowspan="1">com.nopcommerce.tests.SearchTest</td><td><a href="#m5">searchExistingProduct</a></td><td rowspan="1">1757338073799</td><td rowspan="1">9553</td></tr></tbody>
+</table>
+<h2>Regression</h2><h3 id="m0">com.nopcommerce.tests.CartTest#addToCartTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: java.net.http.HttpTimeoutException: request timed out
+Build info: version: &apos;4.14.0&apos;, revision: &apos;e5a96349ce&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0ecd8f4b08920a2f4b121967a974a676, findElement {using=css selector, value=button[id^=&apos;add-to-cart-button&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.80, chrome: {chromedriverVersion: 140.0.7339.80 (670b6f192f46..., userDataDir: C:\Users\SUDHEE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64446}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64446/devtoo..., se:cdpVersion: 140.0.7339.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0ecd8f4b08920a2f4b121967a974a676
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:387)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:353)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:188)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.nopcommerce.pages.ProductPage.clickAddToCart(ProductPage.java:12)
+	at com.nopcommerce.tests.CartTest.addToCartTest(CartTest.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+Caused by: java.net.http.HttpTimeoutException: request timed out
+	at java.net.http/jdk.internal.net.http.ResponseTimerEvent.handle(ResponseTimerEvent.java:63)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.purgeTimeoutsAndReturnNextDeadline(HttpClientImpl.java:1751)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1348)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.nopcommerce.tests.CheckoutTest#registeredUserCheckout</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;button[id^=&apos;add-to-cart-button&apos;]&quot;}
+  (Session info: chrome=140.0.7339.80)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.14.0&apos;, revision: &apos;e5a96349ce&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b6faa28cd7e20d16c8324c03ad65076e, findElement {using=css selector, value=button[id^=&apos;add-to-cart-button&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.80, chrome: {chromedriverVersion: 140.0.7339.80 (670b6f192f46..., userDataDir: C:\Users\SUDHEE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50475}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50475/devtoo..., se:cdpVersion: 140.0.7339.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b6faa28cd7e20d16c8324c03ad65076e
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.nopcommerce.pages.ProductPage.clickAddToCart(ProductPage.java:12)
+	at com.nopcommerce.tests.CheckoutTest.registeredUserCheckout(CheckoutTest.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.nopcommerce.tests.LoginTest#validLoginTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Login failed - logout link not found expected [true] but found [false]
+	at com.nopcommerce.tests.LoginTest.validLoginTest(LoginTest.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.nopcommerce.tests.OrderHistoryTest#viewOrderHistory</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;a.account&quot;}
+  (Session info: chrome=140.0.7339.80)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.14.0&apos;, revision: &apos;e5a96349ce&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [56268ad578dd500fd2fb41c80a2f12ac, findElement {using=css selector, value=a.account}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.80, chrome: {chromedriverVersion: 140.0.7339.80 (670b6f192f46..., userDataDir: C:\Users\SUDHEE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49272}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49272/devtoo..., se:cdpVersion: 140.0.7339.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 56268ad578dd500fd2fb41c80a2f12ac
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.nopcommerce.pages.OrderPage.goToOrders(OrderPage.java:13)
+	at com.nopcommerce.tests.OrderHistoryTest.viewOrderHistory(OrderHistoryTest.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.nopcommerce.tests.RegisterTest#registerNewUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.nopcommerce.tests.SearchTest#searchExistingProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

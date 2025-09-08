@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="2" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-08T18:57:08 IST" name="NopCommerce Suite" finished-at="2025-09-08T19:04:12 IST" duration-ms="423837">
+    <groups>
+    </groups>
+    <test started-at="2025-09-08T18:57:08 IST" name="Regression" finished-at="2025-09-08T19:04:12 IST" duration-ms="423837">
+      <class name="com.nopcommerce.tests.OrderHistoryTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.nopcommerce.tests.OrderHistoryTest@31304f14]" started-at="2025-09-08T19:03:47 IST" name="setUp" finished-at="2025-09-08T19:03:59 IST" duration-ms="12621" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="viewOrderHistory()[pri:0, instance:com.nopcommerce.tests.OrderHistoryTest@31304f14]" started-at="2025-09-08T19:03:59 IST" name="viewOrderHistory" finished-at="2025-09-08T19:04:11 IST" duration-ms="12049" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"a.account"}
+  (Session info: chrome=140.0.7339.80)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.14.0', revision: 'e5a96349ce'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [56268ad578dd500fd2fb41c80a2f12ac, findElement {using=css selector, value=a.account}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.80, chrome: {chromedriverVersion: 140.0.7339.80 (670b6f192f46..., userDataDir: C:\Users\SUDHEE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49272}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49272/devtoo..., se:cdpVersion: 140.0.7339.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 56268ad578dd500fd2fb41c80a2f12ac]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"a.account"}
+  (Session info: chrome=140.0.7339.80)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.14.0', revision: 'e5a96349ce'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [56268ad578dd500fd2fb41c80a2f12ac, findElement {using=css selector, value=a.account}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.80, chrome: {chromedriverVersion: 140.0.7339.80 (670b6f192f46..., userDataDir: C:\Users\SUDHEE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49272}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49272/devtoo..., se:cdpVersion: 140.0.7339.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 56268ad578dd500fd2fb41c80a2f12ac
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at com.nopcommerce.pages.OrderPage.goToOrders(OrderPage.java:13)
+at com.nopcommerce.tests.OrderHistoryTest.viewOrderHistory(OrderHistoryTest.java:22)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewOrderHistory -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.nopcommerce.tests.OrderHistoryTest@31304f14]" started-at="2025-09-08T19:04:11 IST" name="tearDown" finished-at="2025-09-08T19:04:12 IST" duration-ms="304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.nopcommerce.tests.OrderHistoryTest -->
+      <class name="com.nopcommerce.tests.CartTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.nopcommerce.tests.CartTest@4135c3b]" started-at="2025-09-08T18:58:03 IST" name="setUp" finished-at="2025-09-08T18:59:52 IST" duration-ms="109137" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addToCartTest()[pri:0, instance:com.nopcommerce.tests.CartTest@4135c3b]" started-at="2025-09-08T18:59:52 IST" name="addToCartTest" finished-at="2025-09-08T19:02:55 IST" duration-ms="182439" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[java.net.http.HttpTimeoutException: request timed out
+Build info: version: '4.14.0', revision: 'e5a96349ce'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0ecd8f4b08920a2f4b121967a974a676, findElement {using=css selector, value=button[id^='add-to-cart-button']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.80, chrome: {chromedriverVersion: 140.0.7339.80 (670b6f192f46..., userDataDir: C:\Users\SUDHEE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64446}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64446/devtoo..., se:cdpVersion: 140.0.7339.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0ecd8f4b08920a2f4b121967a974a676]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: java.net.http.HttpTimeoutException: request timed out
+Build info: version: '4.14.0', revision: 'e5a96349ce'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0ecd8f4b08920a2f4b121967a974a676, findElement {using=css selector, value=button[id^='add-to-cart-button']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.80, chrome: {chromedriverVersion: 140.0.7339.80 (670b6f192f46..., userDataDir: C:\Users\SUDHEE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64446}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64446/devtoo..., se:cdpVersion: 140.0.7339.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0ecd8f4b08920a2f4b121967a974a676
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:387)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:353)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:188)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at com.nopcommerce.pages.ProductPage.clickAddToCart(ProductPage.java:12)
+at com.nopcommerce.tests.CartTest.addToCartTest(CartTest.java:18)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.net.http.HttpTimeoutException: request timed out
+at java.net.http/jdk.internal.net.http.ResponseTimerEvent.handle(ResponseTimerEvent.java:63)
+at java.net.http/jdk.internal.net.http.HttpClientImpl.purgeTimeoutsAndReturnNextDeadline(HttpClientImpl.java:1751)
+at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1348)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCartTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.nopcommerce.tests.CartTest@4135c3b]" started-at="2025-09-08T19:02:55 IST" name="tearDown" finished-at="2025-09-08T19:03:01 IST" duration-ms="6587" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.nopcommerce.tests.CartTest -->
+      <class name="com.nopcommerce.tests.RegisterTest">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.nopcommerce.tests.RegisterTest@35d019a3]" started-at="2025-09-08T18:57:08 IST" name="beforeSuite" finished-at="2025-09-08T18:57:08 IST" duration-ms="271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.nopcommerce.tests.RegisterTest@35d019a3]" started-at="2025-09-08T18:57:08 IST" name="setUp" finished-at="2025-09-08T18:57:15 IST" duration-ms="7180" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="registerNewUser()[pri:0, instance:com.nopcommerce.tests.RegisterTest@35d019a3]" started-at="2025-09-08T18:57:15 IST" name="registerNewUser" finished-at="2025-09-08T18:57:18 IST" duration-ms="3214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerNewUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.nopcommerce.tests.RegisterTest@35d019a3]" started-at="2025-09-08T18:57:18 IST" name="tearDown" finished-at="2025-09-08T18:57:19 IST" duration-ms="344" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.nopcommerce.tests.RegisterTest@35d019a3]" started-at="2025-09-08T19:04:12 IST" name="afterSuite" finished-at="2025-09-08T19:04:12 IST" duration-ms="644" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.nopcommerce.tests.RegisterTest -->
+      <class name="com.nopcommerce.tests.CheckoutTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.nopcommerce.tests.CheckoutTest@6302bbb1]" started-at="2025-09-08T19:03:01 IST" name="setUp" finished-at="2025-09-08T19:03:23 IST" duration-ms="21823" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="registeredUserCheckout()[pri:0, instance:com.nopcommerce.tests.CheckoutTest@6302bbb1]" started-at="2025-09-08T19:03:23 IST" name="registeredUserCheckout" finished-at="2025-09-08T19:03:46 IST" duration-ms="23304" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"button[id^='add-to-cart-button']"}
+  (Session info: chrome=140.0.7339.80)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.14.0', revision: 'e5a96349ce'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b6faa28cd7e20d16c8324c03ad65076e, findElement {using=css selector, value=button[id^='add-to-cart-button']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.80, chrome: {chromedriverVersion: 140.0.7339.80 (670b6f192f46..., userDataDir: C:\Users\SUDHEE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50475}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50475/devtoo..., se:cdpVersion: 140.0.7339.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b6faa28cd7e20d16c8324c03ad65076e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"button[id^='add-to-cart-button']"}
+  (Session info: chrome=140.0.7339.80)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.14.0', revision: 'e5a96349ce'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b6faa28cd7e20d16c8324c03ad65076e, findElement {using=css selector, value=button[id^='add-to-cart-button']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.80, chrome: {chromedriverVersion: 140.0.7339.80 (670b6f192f46..., userDataDir: C:\Users\SUDHEE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50475}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50475/devtoo..., se:cdpVersion: 140.0.7339.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b6faa28cd7e20d16c8324c03ad65076e
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at com.nopcommerce.pages.ProductPage.clickAddToCart(ProductPage.java:12)
+at com.nopcommerce.tests.CheckoutTest.registeredUserCheckout(CheckoutTest.java:23)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registeredUserCheckout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.nopcommerce.tests.CheckoutTest@6302bbb1]" started-at="2025-09-08T19:03:46 IST" name="tearDown" finished-at="2025-09-08T19:03:47 IST" duration-ms="372" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.nopcommerce.tests.CheckoutTest -->
+      <class name="com.nopcommerce.tests.LoginTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.nopcommerce.tests.LoginTest@4562e04d]" started-at="2025-09-08T18:57:19 IST" name="setUp" finished-at="2025-09-08T18:57:31 IST" duration-ms="12566" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validLoginTest()[pri:0, instance:com.nopcommerce.tests.LoginTest@4562e04d]" started-at="2025-09-08T18:57:31 IST" name="validLoginTest" finished-at="2025-09-08T18:57:45 IST" duration-ms="13964" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login failed - logout link not found expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login failed - logout link not found expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.nopcommerce.tests.LoginTest.validLoginTest(LoginTest.java:19)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.nopcommerce.tests.LoginTest@4562e04d]" started-at="2025-09-08T18:57:45 IST" name="tearDown" finished-at="2025-09-08T18:57:46 IST" duration-ms="302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.nopcommerce.tests.LoginTest -->
+      <class name="com.nopcommerce.tests.SearchTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.nopcommerce.tests.SearchTest@2a65fe7c]" started-at="2025-09-08T18:57:46 IST" name="setUp" finished-at="2025-09-08T18:57:53 IST" duration-ms="7763" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchExistingProduct()[pri:0, instance:com.nopcommerce.tests.SearchTest@2a65fe7c]" started-at="2025-09-08T18:57:53 IST" name="searchExistingProduct" finished-at="2025-09-08T18:58:03 IST" duration-ms="9553" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchExistingProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.nopcommerce.tests.SearchTest@2a65fe7c]" started-at="2025-09-08T18:58:03 IST" name="tearDown" finished-at="2025-09-08T18:58:03 IST" duration-ms="255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.nopcommerce.tests.SearchTest -->
+    </test> <!-- Regression -->
+  </suite> <!-- NopCommerce Suite -->
+</testng-results>
